@@ -2,6 +2,8 @@ import { MotiView } from 'moti';
 import { RectButton } from 'react-native-gesture-handler';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import styled from 'styled-components/native';
+import { Feather } from '@expo/vector-icons';
+
 
 export const Container = styled(MotiView)`
   flex: 1;
@@ -71,4 +73,9 @@ export const TopGamesTitle = styled.Text`
   color: ${props => props.theme.colors.white};
   font-size: 20px;
   font-family: ${props => props.theme.fonts.bold};
+`;
+
+export const Icon = styled(Feather)`
+    color: ${({theme})=> theme.colors.white};
+    width: 24px;
 `;
