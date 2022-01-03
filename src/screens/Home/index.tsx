@@ -50,11 +50,6 @@ export function Home() {
   
   const theme = useTheme();
   const { signOut, user, isLoggingOut } = useAuth();
-
-  // creates a function to handle sign out
-    // try to call and wait signOut
-    // if fails, display an Alert with the title "Erro SignOut" and message "Ocorreu um erro ao tentar se deslogar do app"
-
   function handleSignOut(){
     try {
       signOut();
